@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chatbot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="chatbot-container">
+        <div class="chatbot-header">
+            <div class="header-content">
+                <div class="bot-icon">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="2" y="4" width="20" height="16" rx="3" fill="white"/>
+                        <circle cx="9" cy="10" r="1.5" fill="#4B0082"/>
+                        <circle cx="15" cy="10" r="1.5" fill="#4B0082"/>
+                        <path d="M7 14.5C7 14.5 9.5 16 12 16C14.5 16 17 14.5 17 14.5" stroke="#4B0082" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <span class="chatbot-title">Chatbot</span>
+                <div class="header-icons">
+                    <div class="clear-chat-btn" id="clearChatBtn" title="Clear Chat">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 19C6 20.1 6.9 21 8 21H16C17.1 21 18 20.1 18 19V7H6V19ZM19 4H15.5L14.5 3H9.5L8.5 4H5V6H19V4Z" fill="white" style="opacity: 0.9"/>
+                        </svg>
+                    </div>
+                    <div class="dropdown-icon">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 10L12 15L17 10H7Z" fill="white" style="opacity: 0.9"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="chat-messages" id="chatMessages">
+            <!-- Messages will be dynamically inserted here -->
+        </div>
+
+        <div class="input-container">
+            <input type="file" id="fileInput" style="display: none;">
+            <div class="input-wrapper">
+                <input type="text" id="messageInput" placeholder="Type Here..." class="message-input">
+                <div class="input-actions">
+                    <button class="emoji-btn" id="emojiBtn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10" stroke="#4B0082" stroke-width="2" fill="none"/>
+                            <circle cx="8" cy="10" r="1" fill="#4B0082"/>
+                            <circle cx="16" cy="10" r="1" fill="#4B0082"/>
+                            <path d="M8 14s1.5 2 4 2 4-2 4-2" stroke="#4B0082" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <button class="attachment-btn" id="attachmentBtn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21.44 11.05L12.25 20.24C11.12 21.37 9.43 21.37 8.3 20.24C7.17 19.11 7.17 17.32 8.3 16.19L15.54 8.95C16.28 8.21 17.47 8.21 18.21 8.95C18.95 9.69 18.95 10.88 18.21 11.62L12.35 17.48C12.16 17.67 11.84 17.67 11.65 17.48C11.46 17.29 11.46 16.97 11.65 16.78L16.54 11.89" stroke="#4B0082" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button class="send-btn" id="sendBtn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 19L19 12L12 5M5 12H19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
