@@ -4,9 +4,11 @@
 >
 > **Author:** Aamir Hussain
 
+![AI Chatbot Widget Preview](./assets/chatbot-preview.png)
+
 This project is a self-contained, front-end chatbot interface. It's designed to be easily integrated into any web page and connected to a backend AI or NLP service. It features a clean, modern design and supports rich message formatting, including code blocks.
 
-## Features
+## ✨ Features
 
 *   **Modern UI:** Clean and responsive design that works on desktop and mobile.
 *   **Dynamic Messaging:** Supports asynchronous communication with a backend service.
@@ -16,7 +18,7 @@ This project is a self-contained, front-end chatbot interface. It's designed to 
 *   **Client-Side Utilities:** Includes a global `ChatbotUtils` object for runtime customizations like updating the API config or clearing the chat.
 *   **Extensible:** Includes placeholder functionality for emojis and file attachments.
 
-## Getting Started
+## 🚀 Getting Started
 
 Follow these instructions to get a copy of the project up and running on your local machine.
 
@@ -75,7 +77,7 @@ Follow these instructions to get a copy of the project up and running on your lo
     ChatbotUtils.addCustomMessage('This is a custom message!');
     ```
 
-## Structure
+## 📂 Project Structure
 
 ```
 Widget/
